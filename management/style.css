@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+html {
+	max-width: 1900px;
+	font-size: 100%;
+}
+
+.nav {
+	font-size: 110%;
+	text-align: right;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 0 3%;
+}
+
+.nav li {
+	list-style: none;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.bottom {
+	margin-bottom: 2%;
+}
+
+.message {
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.footer {
+	width: auto;
+	font-size: 90%;
+	color: #FFF;
+	background-color: brown;
+	text-align: center;
+	margin-top: 3%;
+}
+
+/* ここからログイン 画面*/
+
+.login {
+	font-size: 110%;
+	margin-bottom: 2%;
+}
+
+/* ここからメイン画面 */
+
+.main {
+	margin-left: 10%;
+}
+
+.work_form {
+	font-size: 105%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+
+/* ここから登録者画面 */
+
+.search {
+	font-size: 105%;
+	margin-right: 10%;
+	margin-bottom: 1%;
+}
+
+.update_form {
+	margin-left: 10%;
+}
+
+.update {
+	font-size: 105%;
+	margin-left: 1%;
+	margin-bottom: 2%
+}
+
+.newr {
+	font-size: 105%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.newbottom {
+	font-size: 105%;
+	margin-bottom: 5%;
+}
+
+
+/* ここから管理画面 */
+
+.search_a {
+	margin-left: 30%;
+}
+
+.table {
+	font-size: 105%;
+	margin-left: 30%;
+	margin-bottom: 2%;
+}
+
+.table tr {
+	padding: 1%;
+}
+/* ここから日報画面 */
+
+.searchbottom {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.table_a {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+}
+
+.center_a {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 90%;
+    }
+
+	/* ナビゲーション */
+
+	.nav ul li {
+		display: none; /* デフォルトで非表示にする */
+	}
+
+	.nav ul li:nth-child(1),
+	.nav ul li:nth-child(2) {
+		display: inline-block; /* 1番目と2番目のリンクのみ表示する */
+	}
+
+	/* メイン */
+
+	.main {
+		margin-left: 0;
+	}
+	.worker {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.worker input,
+    .worker select,
+    .worker textarea {
+	width: 90%;
+	margin-bottom: 10px;
+	}
+
+	.remove-worker {
+		width: 30%;
+		padding: 2% 0;
+		margin-bottom: 10px;
+	}
+
+	/* 登録 */
+
+	.new {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* 管理 */
+
+	/* 日報 */
+
+}
